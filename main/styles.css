@@ -91,7 +91,7 @@ html {
 
 /*Startscreen*/
 .startscreen {
-    background:url(../img/start-screen-background.png), linear-gradient(0deg, #211F20, #211F20),
+    background:url(/assets/img/start-screen-background.png), linear-gradient(0deg, #211F20, #211F20),
     radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
     background-repeat: no-repeat;
     background-position: center;
@@ -230,10 +230,10 @@ html {
     background-position: center;
 }
 .prev-arrow {
-    background-image: url(/src/svg/Arrow.svg);
+    background-image: url(/assets/svg/Arrow.svg);
 }
 .next-arrow {
-    background-image: url(/src/svg/Arrow-next.svg);
+    background-image: url(/assets/svg/Arrow-next.svg);
 }
 /*Pets*/
 
@@ -297,6 +297,14 @@ html {
     text-align: start;
     max-width: 300px;
 }
+.donation__info-subtitle {
+    font-size: 15px;
+    line-height: 16.5px;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #545454;
+}
 .donation__info-card {
     display: flex;
     align-items: center;
@@ -329,7 +337,7 @@ html {
 /*Footer*/
 
 .footer {
-    background: url(/src/img/footer-background.png), linear-gradient(0deg, #211F20, #211F20),
+    background: url(/assets/img/footer-background.png), linear-gradient(0deg, #211F20, #211F20),
     radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
     background-repeat: no-repeat;
     background-position: center;
