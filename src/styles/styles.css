@@ -321,3 +321,49 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     color: #B2B2B2;
 }
 /*Donation*/
+
+/*Footer*/
+
+.footer {
+    background: url(/src/img/footer-background.png), linear-gradient(0deg, #211F20, #211F20),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 40px;
+}
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    height: 310px;
+}
+.footer__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 234px;
+}
+.footer__content-contacts {
+    width: 278px;
+}
+.footer__content-locations {
+    width: 302px;
+}
+.footer__title {
+    color: #FFFFFF;
+    text-align: left;
+}
+.footer__text {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 23px;
+    letter-spacing: 1.3px;
+    color: #F1CDB3;
+    margin-left: 15px
+}
+.footer__info {
+    display: flex;
+    align-items: center;
+}
+/*Footer*/
