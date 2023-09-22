@@ -1,0 +1,269 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+html {
+    scroll-behavior: smooth;
+}
+.container {
+   max-width: 1200px;
+   margin: 0 auto; 
+}
+.titles {
+    max-width: 400px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    line-height: 45.5px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    color: #545454;
+    text-align: center;
+}
+.section {
+    padding: 90px 0px;
+}
+.light-buttons {
+    transition: all .5s ease;
+}
+.light-buttons:hover {
+    background-color: #F1CDB3;
+}
+
+/*Header*/
+.header {
+    padding: 20px 0px;
+}
+.header__body {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo-title {
+    font-size: 32px;
+    font-weight: 400;
+    font-family: Georgia;
+    color: #545454;
+    line-height: 35.2px;
+    letter-spacing: 1.5px;
+}
+
+.header__logo-subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    color: #292929;
+}
+
+.menu__list {
+    display: flex;
+    gap: 25px;
+}
+
+.menu__list-link {
+    font-size: 15px;
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+.menu__list-link a {
+    text-decoration: none;
+    color: #545454;
+}
+.link__activated.menu__list-link::after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color:#F1CDB3;
+}
+/*Header*/
+/*Pets*/
+.pets {
+    background-color: #F6F6F6;
+}
+.pets__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 1162px;
+}
+
+.pets__contents-slider {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.pets__cards {
+    height: 435px;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all .5s ease;
+}
+.pets__cards:hover {
+    cursor: pointer;
+    box-shadow: 1px 3px 15px #F1CDB3;
+    border-radius: 5px;
+}
+.pets__cards-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    color: #545454;
+}
+.pets__cards-button {
+    padding: 15px 45px;
+    border: 2px solid #F1CDB3;
+    background-color: #FAFAFA;
+    border-radius: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:17px;
+    line-height: 22px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+}
+.pets__content-button {
+    padding: 15px 45px;
+    border-radius: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:17px;
+    line-height: 22px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    color: #292929;
+    background-color: #F1CDB3;
+}
+.slider-arrow {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pets__content-pagination {
+    display: flex;
+    width: 340px;
+    justify-content: space-between;
+}
+.first-page::after {
+    display: block;
+    content: '<<';
+}
+.prev-page::after {
+    display: block;
+    content: '<';
+}
+.next-page::after {
+    display: block;
+    content: '>';
+}
+.last-page::after {
+    display: block;
+    content: '>>';
+}
+.pages-arrow {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    fill: #292929;
+    border: 2px solid #F1CDB3;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1.2px;
+    background-color: #F6F6F6;
+    transition: all .5s ease;
+}
+.pages-arrow:hover {
+    box-shadow: 2px 2px #F1CDB3;
+}
+.pages-arrow:disabled {
+    border: 2px solid #CDCDCD;
+    pointer-events: none;
+}
+.page-number {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #F1CDB3;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1.2px;
+    cursor:auto;
+}
+/*Pets*/
+
+/*Footer*/
+
+.footer {
+    background: url(/assets/img/footer-background.png), linear-gradient(0deg, #211F20, #211F20),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 40px;
+}
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    height: 310px;
+}
+.footer__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 234px;
+}
+.footer__content-contacts {
+    width: 278px;
+}
+.footer__content-locations {
+    width: 302px;
+}
+.footer__title {
+    color: #FFFFFF;
+    text-align: left;
+}
+.footer__text {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 23px;
+    letter-spacing: 1.3px;
+    color: #F1CDB3;
+    margin-left: 15px
+}
+.footer__info {
+    display: flex;
+    align-items: center;
+}
+/*Footer*/
