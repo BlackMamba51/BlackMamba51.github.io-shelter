@@ -103,7 +103,7 @@ html {
 
 /*Startscreen*/
 .startscreen {
-    background:url(/assets/img/start-screen-background.png), linear-gradient(0deg, #211F20, #211F20),
+    background:url(../assets/img/start-screen-background.png), linear-gradient(0deg, #211F20, #211F20),
     radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
     background-repeat: no-repeat;
     background-position: center;
@@ -248,10 +248,10 @@ html {
     background-position: center;
 }
 .prev-arrow {
-    background-image: url(/assets/svg/Arrow.svg);
+    background-image: url(../assets/svg/Arrow.svg);
 }
 .next-arrow {
-    background-image: url(/assets/svg/Arrow-next.svg);
+    background-image: url(../assets/svg/Arrow-next.svg);
 }
 /*Pets*/
 
@@ -355,7 +355,7 @@ html {
 /*Footer*/
 
 .footer {
-    background: url(/assets/img/footer-background.png), linear-gradient(0deg, #211F20, #211F20),
+    background: url(../assets/img/footer-background.png), linear-gradient(0deg, #211F20, #211F20),
     radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
     background-repeat: no-repeat;
     background-position: center;
